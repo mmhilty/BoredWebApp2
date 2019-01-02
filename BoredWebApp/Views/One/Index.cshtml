@@ -3,10 +3,24 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>ACTIVITY FOR YOU:</h2>
 
 
-ViewBag.Activities
+    <form action="~/Home/Edit/">
+        <label>Activity:@ViewBag.Activity.activity</label>
+        <br />
+        <label>Accessibility: @ViewBag.Activity.accessibility</label>
+        <br />
+        <Label>Type: @ViewBag.Activity.type</Label>
+        <br />
+        <label>Participants: @ViewBag.Activity.participants</label>
+        <br />
+        <label>Price: @ViewBag.Activity.price</label>
+        <input type="hidden" value=@ViewBag.Activity.key name="key" />
+    </form>
+    <br />
+    <br />
+
 
 
 
