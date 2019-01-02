@@ -1,7 +1,13 @@
 ﻿
-@{
-    ViewBag.Title = "Index";
-}
+@model IEnumerable<BoredWebApp.Models.Activity>
 
-<h2>Index</h2>
 
+
+<h1>Bored?</h1>
+<h2>Here's some things you can try:</h2>
+<div class="panel-body">
+        @foreach (var a in Model)
+        {
+            <p>@a.activity</p>
+        }
+</div>
